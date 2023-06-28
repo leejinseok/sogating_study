@@ -3,7 +3,7 @@ package com.example.datingappstudy
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.bokchi.sogating_final.slider.CardStackAdapter
+import com.example.datingappstudy.slider.CardStackAdapter
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
 import com.yuyakaido.android.cardstackview.CardStackListener
 import com.yuyakaido.android.cardstackview.CardStackView

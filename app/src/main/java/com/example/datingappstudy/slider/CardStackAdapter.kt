@@ -1,4 +1,4 @@
-package com.bokchi.sogating_final.slider
+package com.example.datingappstudy.slider
 
 import android.content.Context
 import android.view.LayoutInflater
