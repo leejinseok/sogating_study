@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DatingAppStudy">
 
+        <activity android:name=".setting.MyPageActivity" />
+        <activity android:name=".setting.SettingActivity" />
         <activity android:name=".auth.LoginActivity" />
         <activity android:name=".auth.JoinActivity" />
         <activity android:name=".auth.IntroActivity" />
