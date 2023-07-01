@@ -104,12 +104,8 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        val testList = mutableListOf<String>()
-        testList.add("a")
-        testList.add("b")
-        testList.add("c")
 
-        cardStackAdapter = CardStackAdapter(baseContext, testList)
+        cardStackAdapter = CardStackAdapter(baseContext, usersDataList)
         cardStackView.layoutManager = manager
         cardStackView.adapter = cardStackAdapter
 
