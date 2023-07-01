@@ -20,9 +20,12 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import java.io.ByteArrayOutputStream
 
+
 class JoinActivity : AppCompatActivity() {
 
     private val TAG = "JoinActivity"
+
+    private lateinit var auth: FirebaseAuth
 
     private var nickname = ""
     private var gender = ""
@@ -30,10 +33,7 @@ class JoinActivity : AppCompatActivity() {
     private var age = ""
     private var uid = ""
 
-
-    private lateinit var auth: FirebaseAuth
-    private lateinit var profileImage : ImageView
-
+    lateinit var profileImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -96,11 +96,15 @@ class JoinActivity : AppCompatActivity() {
 
                     }
                 }
+
+
         }
 
     }
 
-    private fun uploadImage(uid : String){
+
+    private fun uploadImage(uid: String) {
+
         val storage = Firebase.storage
         val storageRef = storage.reference.child(uid + ".png")
 
@@ -123,4 +127,6 @@ class JoinActivity : AppCompatActivity() {
 
 
     }
+
+
 }
